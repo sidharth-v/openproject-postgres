@@ -39,7 +39,7 @@ properties:
       vault: PGPASSWORD
     POSTGRESQL_OPENPROJECT_PASSWORD:
       vault: POSTGRESQL_OPENPROJECT_PASSWORD
-    revision : 2
+    revision : 3
 
     #WebDav Setup
     PUSH_BACKUP_WEBDAV: False
