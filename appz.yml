@@ -1,7 +1,7 @@
 app:
     name: OpenProject Postgres Master
     code: OpenProjectPostgres
-    notify: fjoy@ecloudcontrol.com
+    notify: svengathattil@ecloudcontrol.com
     
 build:
     version: 13.X
@@ -11,7 +11,7 @@ build:
     image_template: postgres_master-13.3
     
 deploy:
-    context: francisjoy/DEV
+    context: sidharth-v/DEV
     type: statefulset
     replicas: 1
     port:
@@ -19,8 +19,8 @@ deploy:
     
 volumes:
   - claim: postgres-master-data
-    class: microk8s-hostpath
-    matchLabels: false
+    #class: microk8s-hostpath
+    #matchLabels: false
     mount: /appz/data
     name: data
     size: 5Gi
